@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+
+        <div class="main_top">
+
+          <div class="switch_box">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <p>Light Mode</p>
+          </div>
+
+          <div class="input_box">
+            <img id="loop" src="img/loop.png" alt="" />
+          <input type="text" placeholder="Search for your preffered city..."/>
+        </div>
+          
+          <button>
+            <img src="img/current location icon.png" alt="">
+            Current Location</button>
+
+          </div>
+
+          <div class="main_middle">
+
+            <div class="date_forecast">
+              <h1 id="city">Athens</h1>
+              <h2 id="time">09:03</h2>
+              <h2 id="day">Thursday, 31 Aug</h2>
+            </div>
+
+            <div class="weather_forecast">
+
+              <div class="weather_forecast_left">
+                <div>
+                <h1 id="main_deg">24°C</h1>
+                <h2 id="main_deg2">Feels like: <b>22°C</b></h2>
+              </div>
+
+                <div class="sunrises">
+                <div class="sunrise_box">
+                  <img src="img/sunrise.png" alt="">
+                  <div class="sunrise_inner_box">
+                    <h1>Sunrise</h1>
+                    <h2 id="sunrise_time">06:37 AM</h2>
+                  </div>
+                </div>
+
+                <div class="sunset_box">
+                  <img src="img/sunset.png" alt="">
+                  <div class="sunset_inner_box">
+                    <h1>Sunset</h1>
+                    <h2 id="sunset_time">18:37 PM</h2>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+
+              <div class="weather_forecast_middle">
+                <img id="type_of_weather_icon" src="img/clear.png" alt="">
+                <h1 id="type_of_weather">Sunny</h1>
+              </div>
+
+
+              <div class="weather_forecast_right">
+
+                <div class="weather_forecast_right_left">
+
+                  <div class="humidity_box">
+                    <img src="img/humidity.png" alt="">
+                    <h1 id="humidity">41%</h1>
+                    <h2>Humidity</h2>
+                  </div>
+                  <div class="pressure_box">
+                    <img src="img/pressure.png" alt="">
+                    <h1 id="pressure">997hPa</h1>
+                    <h2>Pressure</h2>
+                  </div>
+
+                </div>
+
+                <div class="weather_forecast_right_right">
+
+                  
+                  <div class="wind_speed_box">
+                    <img src="img/wind.png" alt="">
+                    <h1 id="wind_speed">2km/h</h1>
+                    <h2>Wind Speed </h2>
+                  </div>
+                  <div class="uv_box">
+                    <img src="img/uv.png" alt="">
+                    <h1 id="uv">8</h1>
+                    <h2>UV</h2>
+                  </div>
+
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="main_bottom">
+
+            <div class="five_days_forecast">
+
+              <h1>5 Days Forecast:</h1>
+
+              <div class="five_days_item">
+                <img id="five_days_item_icon" src="img/clouds.png" alt="">
+                <h1 id="five_days_deg">20°C</h1>
+                <h2>Friday, 1 Sep</h2>
+              </div>
+              <div class="five_days_item">
+                <img id="five_days_item_icon" src="img/clouds.png" alt="">
+                <h1 id="five_days_deg">20°C</h1>
+                <h2>Friday, 1 Sep</h2>
+              </div>
+              <div class="five_days_item">
+                <img id="five_days_item_icon" src="img/clouds.png" alt="">
+                <h1 id="five_days_deg">20°C</h1>
+                <h2>Friday, 1 Sep</h2>
+              </div>
+              <div class="five_days_item">
+                <img id="five_days_item_icon" src="img/clouds.png" alt="">
+                <h1 id="five_days_deg">20°C</h1>
+                <h2>Friday, 1 Sep</h2>
+              </div>
+              <div class="five_days_item">
+                <img id="five_days_item_icon" src="img/clouds.png" alt="">
+                <h1 id="five_days_deg">20°C</h1>
+                <h2>Friday, 1 Sep</h2>
+              </div>
+            </div>
+
+            <div class="hourly_forecast">
+              <h1>Hourly Forecast:</h1>
+
+              <div class="hourly_forecast_inner">
+
+                <div class="hourly_forecast_item">
+                  <h1 id="hourly_forecast_hour">12:00</h1>
+                  <img id="hourly_forecast_icon" src="img/clear.png" alt="">
+                  <h2 id="hourly_forecast_deg">26°C</h2>
+                  <img id="hourly_forecast_wind_direction" src="img/navigation_left.png" alt="">
+                  <h3 id="hourly_forecast_km">3km/h</h3>
+                </div>
+                <div class="hourly_forecast_item">
+                  <h1 id="hourly_forecast_hour">12:00</h1>
+                  <img id="hourly_forecast_icon" src="img/clear.png" alt="">
+                  <h2 id="hourly_forecast_deg">26°C</h2>
+                  <img id="hourly_forecast_wind_direction" src="img/navigation_left.png" alt="">
+                  <h3 id="hourly_forecast_km">3km/h</h3>
+                </div>
+                <div class="hourly_forecast_item">
+                  <h1 id="hourly_forecast_hour">12:00</h1>
+                  <img id="hourly_forecast_icon" src="img/clear.png" alt="">
+                  <h2 id="hourly_forecast_deg">26°C</h2>
+                  <img id="hourly_forecast_wind_direction" src="img/navigation_left.png" alt="">
+                  <h3 id="hourly_forecast_km">3km/h</h3>
+                </div>
+                <div class="hourly_forecast_item">
+                  <h1 id="hourly_forecast_hour">12:00</h1>
+                  <img id="hourly_forecast_icon" src="img/clear.png" alt="">
+                  <h2 id="hourly_forecast_deg">26°C</h2>
+                  <img id="hourly_forecast_wind_direction" src="img/navigation_left.png" alt="">
+                  <h3 id="hourly_forecast_km">3km/h</h3>
+                </div>
+                <div class="hourly_forecast_item">
+                  <h1 id="hourly_forecast_hour">12:00</h1>
+                  <img id="hourly_forecast_icon" src="img/clear.png" alt="">
+                  <h2 id="hourly_forecast_deg">26°C</h2>
+                  <img id="hourly_forecast_wind_direction" src="img/navigation_left.png" alt="">
+                  <h3 id="hourly_forecast_km">3km/h</h3>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+      </div>
+    </div>
+
+    <script  src="js/script.js"></script>
+  </body>
+</html>
